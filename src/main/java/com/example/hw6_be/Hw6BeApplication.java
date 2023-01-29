@@ -32,7 +32,6 @@ class ExampleController {
     public ResponseEntity<List<String>> createExamples(@RequestParam int count) {
         HttpHeaders responseHeaders = new HttpHeaders();
         responseHeaders.set("Access-Control-Allow-Origin", "*");
-        responseHeaders.set("Accept","application/json");
 
         List<String> examples = new ArrayList<>();
         for (int i = 0; i < count; i++) {
